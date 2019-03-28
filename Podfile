@@ -6,9 +6,9 @@ target 'UberClone' do
   use_frameworks!
 
   # Pods for UberClone
-pod 'Firebase/Core'
-pod 'Firebase/Auth'
-pod 'Firebase/Database'
-pod 'RevealingSplashView'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'RevealingSplashView'
 
 end

@@ -121,7 +121,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckE-Hl-Xbi">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ckE-Hl-Xbi">
                                                         <rect key="frame" x="25" y="1.5" width="278" height="22"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
@@ -178,6 +178,7 @@
                                 </constraints>
                                 <state key="normal" image="centerMapBtn"/>
                                 <connections>
+                                    <action selector="centerMapButton:" destination="ogA-Ck-KrA" eventType="touchUpInside" id="r73-6v-627"/>
                                     <action selector="centerMapButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kXN-UZ-1ik"/>
                                 </connections>
                             </button>
@@ -207,10 +208,14 @@
                     </view>
                     <connections>
                         <outlet property="actionButton" destination="AVk-BO-P5H" id="9Ou-iY-Dfh"/>
+                        <outlet property="centerMapButton" destination="qdV-dx-YxO" id="etg-JX-fcH"/>
+                        <outlet property="destinationCircle" destination="79l-uy-JNo" id="pdZ-zs-AJo"/>
+                        <outlet property="destinationTextField" destination="ckE-Hl-Xbi" id="dNA-10-6R4"/>
                         <outlet property="mapView" destination="R7F-gD-M8o" id="d4I-d0-hw3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="ogA-Ck-KrA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="134.48275862068968"/>
         </scene>

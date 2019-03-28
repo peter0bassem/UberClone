@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04122604224CF45D00343B18 /* PassangerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122603224CF45D00343B18 /* PassangerAnnotation.swift */; };
 		041A52AD2243BF8000ECE40C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A52AC2243BF8000ECE40C /* AppDelegate.swift */; };
 		041A52AF2243BF8000ECE40C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A52AE2243BF8000ECE40C /* HomeViewController.swift */; };
 		041A52B22243BF8000ECE40C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041A52B02243BF8000ECE40C /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		042629BD224A40820091229A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042629BC224A40820091229A /* UIViewExtension.swift */; };
 		0429E2A8224BBA7400E0B250 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429E2A7224BBA7400E0B250 /* UpdateService.swift */; };
 		0429E2AA224BC33100E0B250 /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429E2A9224BC33100E0B250 /* DriverAnnotation.swift */; };
+		04407049224D01A900F8B76E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04407048224D01A900F8B76E /* GoogleService-Info.plist */; };
+		0440704B224D227700F8B76E /* UIVIewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440704A224D227700F8B76E /* UIVIewControllerExtensions.swift */; };
 		04CA1A282248E8B500147E4B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A272248E8B500147E4B /* GradientView.swift */; };
 		04CA1A2A2248EDE100147E4B /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A292248EDE100147E4B /* RoundImageView.swift */; };
 		04CA1A2C2248EF4D00147E4B /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A2B2248EF4D00147E4B /* RoundedShadowView.swift */; };
@@ -26,12 +29,12 @@
 		04CA1A3A224915DF00147E4B /* CenterViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A39224915DF00147E4B /* CenterViewControllerDelegate.swift */; };
 		04CCBF3E224A4E4C002EC8D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCBF3D224A4E4C002EC8D4 /* LoginViewController.swift */; };
 		04CCBF40224A5057002EC8D4 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCBF3F224A5057002EC8D4 /* RoundedCornerTextField.swift */; };
-		04CCBF42224A70D2002EC8D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04CCBF41224A70D2002EC8D4 /* GoogleService-Info.plist */; };
 		04CCBF45224A7455002EC8D4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCBF44224A7455002EC8D4 /* DataService.swift */; };
 		D002B1DEA1156F03970BB318 /* Pods_UberClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50F80F34FB63EF2BF323798 /* Pods_UberClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04122603224CF45D00343B18 /* PassangerAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassangerAnnotation.swift; sourceTree = "<group>"; };
 		041A52A92243BF8000ECE40C /* UberClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041A52AC2243BF8000ECE40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041A52AE2243BF8000ECE40C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +45,8 @@
 		042629BC224A40820091229A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0429E2A7224BBA7400E0B250 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
 		0429E2A9224BC33100E0B250 /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
+		04407048224D01A900F8B76E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0440704A224D227700F8B76E /* UIVIewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtensions.swift; sourceTree = "<group>"; };
 		04CA1A272248E8B500147E4B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		04CA1A292248EDE100147E4B /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		04CA1A2B2248EF4D00147E4B /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
@@ -53,7 +58,6 @@
 		04CA1A39224915DF00147E4B /* CenterViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewControllerDelegate.swift; sourceTree = "<group>"; };
 		04CCBF3D224A4E4C002EC8D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04CCBF3F224A5057002EC8D4 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
-		04CCBF41224A70D2002EC8D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04CCBF44224A7455002EC8D4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		89F85C53272FC1FAABD2279B /* Pods-UberClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-UberClone/Pods-UberClone.release.xcconfig"; sourceTree = "<group>"; };
 		E50F80F34FB63EF2BF323798 /* Pods_UberClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,8 +108,8 @@
 				041A52B02243BF8000ECE40C /* Main.storyboard */,
 				041A52B32243BF8200ECE40C /* Assets.xcassets */,
 				041A52B52243BF8200ECE40C /* LaunchScreen.storyboard */,
+				04407048224D01A900F8B76E /* GoogleService-Info.plist */,
 				041A52B82243BF8200ECE40C /* Info.plist */,
-				04CCBF41224A70D2002EC8D4 /* GoogleService-Info.plist */,
 			);
 			path = UberClone;
 			sourceTree = "<group>";
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				042629BC224A40820091229A /* UIViewExtension.swift */,
+				0440704A224D227700F8B76E /* UIVIewControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 				04CA1A2F2248FA9600147E4B /* RoundedShadowButton.swift */,
 				04CCBF3F224A5057002EC8D4 /* RoundedCornerTextField.swift */,
 				0429E2A9224BC33100E0B250 /* DriverAnnotation.swift */,
+				04122603224CF45D00343B18 /* PassangerAnnotation.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041A52B72243BF8200ECE40C /* LaunchScreen.storyboard in Resources */,
-				04CCBF42224A70D2002EC8D4 /* GoogleService-Info.plist in Resources */,
+				04407049224D01A900F8B76E /* GoogleService-Info.plist in Resources */,
 				041A52B42243BF8200ECE40C /* Assets.xcassets in Resources */,
 				041A52B22243BF8000ECE40C /* Main.storyboard in Resources */,
 			);
@@ -318,7 +324,9 @@
 				0429E2A8224BBA7400E0B250 /* UpdateService.swift in Sources */,
 				0429E2AA224BC33100E0B250 /* DriverAnnotation.swift in Sources */,
 				04CA1A372249129600147E4B /* ContainerViewController.swift in Sources */,
+				04122604224CF45D00343B18 /* PassangerAnnotation.swift in Sources */,
 				04CA1A2E2248F04C00147E4B /* CircleView.swift in Sources */,
+				0440704B224D227700F8B76E /* UIVIewControllerExtensions.swift in Sources */,
 				04CA1A352249123F00147E4B /* InnerViewController.swift in Sources */,
 				041A52AF2243BF8000ECE40C /* HomeViewController.swift in Sources */,
 				042629BD224A40820091229A /* UIViewExtension.swift in Sources */,
