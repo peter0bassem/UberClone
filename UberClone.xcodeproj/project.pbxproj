@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0409DC962252160700DBB4B9 /* PickupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DC952252160700DBB4B9 /* PickupViewController.swift */; };
+		0409DC98225216D800DBB4B9 /* RoundMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409DC97225216D800DBB4B9 /* RoundMapView.swift */; };
 		04122604224CF45D00343B18 /* PassangerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122603224CF45D00343B18 /* PassangerAnnotation.swift */; };
 		041A52AD2243BF8000ECE40C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A52AC2243BF8000ECE40C /* AppDelegate.swift */; };
 		041A52AF2243BF8000ECE40C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A52AE2243BF8000ECE40C /* HomeViewController.swift */; };
@@ -18,6 +20,7 @@
 		0429E2AA224BC33100E0B250 /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429E2A9224BC33100E0B250 /* DriverAnnotation.swift */; };
 		04407049224D01A900F8B76E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04407048224D01A900F8B76E /* GoogleService-Info.plist */; };
 		0440704B224D227700F8B76E /* UIVIewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440704A224D227700F8B76E /* UIVIewControllerExtensions.swift */; };
+		045929F72250E16000BAF989 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045929F62250E16000BAF989 /* Alertable.swift */; };
 		04CA1A282248E8B500147E4B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A272248E8B500147E4B /* GradientView.swift */; };
 		04CA1A2A2248EDE100147E4B /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A292248EDE100147E4B /* RoundImageView.swift */; };
 		04CA1A2C2248EF4D00147E4B /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A2B2248EF4D00147E4B /* RoundedShadowView.swift */; };
@@ -34,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0409DC952252160700DBB4B9 /* PickupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupViewController.swift; sourceTree = "<group>"; };
+		0409DC97225216D800DBB4B9 /* RoundMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundMapView.swift; sourceTree = "<group>"; };
 		04122603224CF45D00343B18 /* PassangerAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassangerAnnotation.swift; sourceTree = "<group>"; };
 		041A52A92243BF8000ECE40C /* UberClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041A52AC2243BF8000ECE40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		0429E2A9224BC33100E0B250 /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
 		04407048224D01A900F8B76E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0440704A224D227700F8B76E /* UIVIewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtensions.swift; sourceTree = "<group>"; };
+		045929F62250E16000BAF989 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		04CA1A272248E8B500147E4B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		04CA1A292248EDE100147E4B /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		04CA1A2B2248EF4D00147E4B /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 				04CA1A342249123F00147E4B /* InnerViewController.swift */,
 				04CA1A362249129600147E4B /* ContainerViewController.swift */,
 				04CCBF3D224A4E4C002EC8D4 /* LoginViewController.swift */,
+				0409DC952252160700DBB4B9 /* PickupViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 				04CCBF3F224A5057002EC8D4 /* RoundedCornerTextField.swift */,
 				0429E2A9224BC33100E0B250 /* DriverAnnotation.swift */,
 				04122603224CF45D00343B18 /* PassangerAnnotation.swift */,
+				0409DC97225216D800DBB4B9 /* RoundMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				04CA1A39224915DF00147E4B /* CenterViewControllerDelegate.swift */,
+				045929F62250E16000BAF989 /* Alertable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -331,8 +340,11 @@
 				041A52AF2243BF8000ECE40C /* HomeViewController.swift in Sources */,
 				042629BD224A40820091229A /* UIViewExtension.swift in Sources */,
 				04CA1A2A2248EDE100147E4B /* RoundImageView.swift in Sources */,
+				0409DC98225216D800DBB4B9 /* RoundMapView.swift in Sources */,
 				04CA1A2C2248EF4D00147E4B /* RoundedShadowView.swift in Sources */,
 				04CCBF45224A7455002EC8D4 /* DataService.swift in Sources */,
+				045929F72250E16000BAF989 /* Alertable.swift in Sources */,
+				0409DC962252160700DBB4B9 /* PickupViewController.swift in Sources */,
 				041A52AD2243BF8000ECE40C /* AppDelegate.swift in Sources */,
 				04CA1A282248E8B500147E4B /* GradientView.swift in Sources */,
 				04CCBF40224A5057002EC8D4 /* RoundedCornerTextField.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController, UITextFieldDelegate  {
+class LoginViewController: UIViewController, UITextFieldDelegate, Alertable {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var emailTextField: RoundedCornerTextField!
@@ -47,9 +47,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate  {
                             case AuthErrorCode.emailAlreadyInUse:
                                 print("Email is already in use, Please try again")
                             case AuthErrorCode.wrongPassword:
-                                print("wrong password")
+                                self.showAlert("Whooops! That was the wrong password!")
                             default:
-                                print("Unexpected error, Please try again")
+                                self.showAlert("An unexpeted error occured. Please try again.")
                             }
                         }
                         Auth.auth().createUser(withEmail: email, password: password, completion: { (dataResult, error) in
@@ -57,9 +57,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate  {
                                 if let errorCode = AuthErrorCode(rawValue: error._code) {
                                     switch errorCode {
                                     case AuthErrorCode.invalidEmail:
-                                        print("Invalid email, please try again")
+                                        self.showAlert("That is an invalid email. Please try again.")
                                     default:
-                                        print("Unexpected error, Please try again")
+                                        self.showAlert("An unexpeted error occured. Please try again.")
                                     }
                                 }
                             } else {

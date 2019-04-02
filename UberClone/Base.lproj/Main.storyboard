@@ -525,6 +525,109 @@
             </objects>
             <point key="canvasLocation" x="1613.5999999999999" y="134.48275862068968"/>
         </scene>
+        <!--Pickup View Controller-->
+        <scene sceneID="ojD-m6-Ow9">
+            <objects>
+                <viewController storyboardIdentifier="pickup_view_controller" id="lID-zt-aTh" customClass="PickupViewController" customModule="UberClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tfS-M4-oEt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sK-9j-5O0">
+                                <rect key="frame" x="20" y="35" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="1FX-bu-fLv"/>
+                                    <constraint firstAttribute="height" constant="30" id="GrQ-Ue-qEo"/>
+                                </constraints>
+                                <state key="normal" image="cancelBtn"/>
+                                <connections>
+                                    <action selector="cancelButtonWasPressed:" destination="lID-zt-aTh" eventType="touchUpInside" id="gwJ-1b-23l"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syC-fd-vck">
+                                <rect key="frame" x="94.5" y="30" width="186" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RM-79-KNu">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbR-hf-Bcz">
+                                        <rect key="frame" x="103.5" y="0.0" width="82.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="36"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Iq9-To-YOn"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to pickup this passanger?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZl-4w-FRQ">
+                                <rect key="frame" x="20" y="543.5" width="335" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2w-Ey-MhX">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbM-cb-i65" customClass="RoundedShadowButton" customModule="UberClone" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="CTp-bx-U8Y"/>
+                                            <constraint firstAttribute="height" constant="60" id="lxQ-CR-ysp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
+                                        <state key="normal" title="ACCEPT TRIP">
+                                            <color key="titleColor" red="0.12941176470588234" green="0.32156862745098036" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="acceptTripButtonWasPressed:" destination="lID-zt-aTh" eventType="touchUpInside" id="PSO-cm-3e9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FbM-cb-i65" firstAttribute="leading" secondItem="I2w-Ey-MhX" secondAttribute="leading" constant="20" id="4hy-6K-41s"/>
+                                    <constraint firstAttribute="trailing" secondItem="FbM-cb-i65" secondAttribute="trailing" constant="20" id="JOb-XD-Nt3"/>
+                                    <constraint firstAttribute="height" constant="80" id="Ypf-sy-iNp"/>
+                                    <constraint firstItem="FbM-cb-i65" firstAttribute="top" secondItem="I2w-Ey-MhX" secondAttribute="top" id="fYj-ok-ac3"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KCf-x4-ICL" customClass="RoundMapView" customModule="UberClone" customModuleProvider="target">
+                                <rect key="frame" x="25" y="171" width="325" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="6GT-j0-yXv"/>
+                                    <constraint firstAttribute="height" constant="325" id="o7o-Ll-XcQ"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.32156862745098036" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KCf-x4-ICL" firstAttribute="centerX" secondItem="tfS-M4-oEt" secondAttribute="centerX" id="3R2-JF-2cQ"/>
+                            <constraint firstItem="I2w-Ey-MhX" firstAttribute="trailing" secondItem="L26-ps-RAz" secondAttribute="trailing" id="6sA-0b-t93"/>
+                            <constraint firstItem="syC-fd-vck" firstAttribute="centerX" secondItem="tfS-M4-oEt" secondAttribute="centerX" id="FS6-jf-hza"/>
+                            <constraint firstItem="0sK-9j-5O0" firstAttribute="top" secondItem="tfS-M4-oEt" secondAttribute="top" constant="35" id="HCO-Wh-B6a"/>
+                            <constraint firstItem="syC-fd-vck" firstAttribute="centerY" secondItem="0sK-9j-5O0" secondAttribute="centerY" id="JYb-Ma-8VB"/>
+                            <constraint firstItem="I2w-Ey-MhX" firstAttribute="leading" secondItem="L26-ps-RAz" secondAttribute="leading" id="RBU-sx-H9K"/>
+                            <constraint firstItem="L26-ps-RAz" firstAttribute="trailing" secondItem="GZl-4w-FRQ" secondAttribute="trailing" constant="20" id="S5T-OO-TTI"/>
+                            <constraint firstItem="KCf-x4-ICL" firstAttribute="centerY" secondItem="tfS-M4-oEt" secondAttribute="centerY" id="Vle-p9-Yki"/>
+                            <constraint firstItem="0sK-9j-5O0" firstAttribute="leading" secondItem="L26-ps-RAz" secondAttribute="leading" constant="20" id="Vsw-Sh-72z"/>
+                            <constraint firstItem="I2w-Ey-MhX" firstAttribute="bottom" secondItem="L26-ps-RAz" secondAttribute="bottom" id="caR-Nj-ugo"/>
+                            <constraint firstItem="I2w-Ey-MhX" firstAttribute="top" secondItem="GZl-4w-FRQ" secondAttribute="bottom" constant="20" id="ubS-ot-0OH"/>
+                            <constraint firstItem="GZl-4w-FRQ" firstAttribute="leading" secondItem="L26-ps-RAz" secondAttribute="leading" constant="20" id="vFq-Gp-4t8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L26-ps-RAz"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickupMapView" destination="KCf-x4-ICL" id="EUd-Gh-bHb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPS-PX-aKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2264.8000000000002" y="133.5832083958021"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cancelBtn" width="32" height="31"/>
