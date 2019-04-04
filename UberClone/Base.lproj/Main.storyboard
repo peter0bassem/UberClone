@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -182,6 +182,20 @@
                                     <action selector="centerMapButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kXN-UZ-1ik"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7b-Hb-Tto">
+                                <rect key="frame" x="130.5" y="534" width="114" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GBh-Nq-hZq"/>
+                                    <constraint firstAttribute="width" constant="114" id="pRE-vW-ct2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="CANCEL TRIP">
+                                    <color key="titleColor" red="0.84705882349999995" green="0.2784313725" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B07-Gd-smB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -189,6 +203,7 @@
                             <constraint firstItem="DSB-Yz-zrd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6Do-Kw-iGr"/>
                             <constraint firstItem="R7F-gD-M8o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6hW-Z6-WVm"/>
                             <constraint firstItem="DSB-Yz-zrd" firstAttribute="top" secondItem="qdV-dx-YxO" secondAttribute="bottom" constant="8" id="7rC-C4-jef"/>
+                            <constraint firstItem="r7b-Hb-Tto" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9kL-A4-Pp8"/>
                             <constraint firstItem="R7F-gD-M8o" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Agb-tK-AHa"/>
                             <constraint firstItem="Qnm-CY-O2N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IWU-3T-65O"/>
                             <constraint firstItem="Edr-p9-6jP" firstAttribute="top" secondItem="Qnm-CY-O2N" secondAttribute="bottom" constant="12" id="Jrx-qR-wa2"/>
@@ -202,12 +217,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qdV-dx-YxO" secondAttribute="trailing" constant="20" id="shV-9G-h9L"/>
                             <constraint firstItem="DSB-Yz-zrd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tFt-YX-84y"/>
                             <constraint firstItem="aKV-oC-bRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uVg-Mp-Hkm"/>
+                            <constraint firstItem="qdV-dx-YxO" firstAttribute="centerY" secondItem="r7b-Hb-Tto" secondAttribute="centerY" id="wK5-Sc-jj9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qnm-CY-O2N" secondAttribute="trailing" constant="20" id="wqs-fH-T9a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="actionButton" destination="AVk-BO-P5H" id="9Ou-iY-Dfh"/>
+                        <outlet property="cancelButton" destination="r7b-Hb-Tto" id="K3G-p1-Vo8"/>
                         <outlet property="centerMapButton" destination="qdV-dx-YxO" id="etg-JX-fcH"/>
                         <outlet property="destinationCircle" destination="79l-uy-JNo" id="pdZ-zs-AJo"/>
                         <outlet property="destinationTextField" destination="ckE-Hl-Xbi" id="dNA-10-6R4"/>

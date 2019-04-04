@@ -78,9 +78,11 @@ class UpdateService {
         DataService.instance.REF_DRIVERS.child(driverKey).updateChildValues(["driverIsOnTrip": true])
     }
     
-    func cancelTrip(withPassangerKey passangerKey: String, forDriverKey driverKey: String) {
+    func cancelTrip(withPassangerKey passangerKey: String, forDriverKey driverKey: String?) {
         DataService.instance.REF_TRIPS.child(passangerKey).removeValue()
         DataService.instance.REF_USERS.child(passangerKey).child("tripCoordinate").removeValue()
-        DataService.instance.REF_DRIVERS.child(driverKey).updateChildValues(["driverIsOnTrip": false])
+        if driverKey != nil {
+            DataService.instance.REF_DRIVERS.child(driverKey!).updateChildValues(["driverIsOnTrip": false])
+        }
     }
 }
