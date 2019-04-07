@@ -63,14 +63,14 @@ class PickupViewController: UIViewController {
 
 extension PickupViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let identifier = "pickupPoint"
+        let identifier = ANNOTATION_PICKUP_POINT
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
         if annotationView == nil {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
         } else {
             annotationView?.annotation = annotation
         }
-        annotationView?.image = UIImage(named: "destinationAnnotation")
+        annotationView?.image = UIImage(named: ANNOTATION_DESTINATION)
         return annotationView
     }
     

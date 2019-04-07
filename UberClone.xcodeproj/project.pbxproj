@@ -21,6 +21,7 @@
 		04407049224D01A900F8B76E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04407048224D01A900F8B76E /* GoogleService-Info.plist */; };
 		0440704B224D227700F8B76E /* UIVIewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440704A224D227700F8B76E /* UIVIewControllerExtensions.swift */; };
 		045929F72250E16000BAF989 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045929F62250E16000BAF989 /* Alertable.swift */; };
+		0468FF4B225A189200533CAB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468FF4A225A189200533CAB /* Constants.swift */; };
 		04CA1A282248E8B500147E4B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A272248E8B500147E4B /* GradientView.swift */; };
 		04CA1A2A2248EDE100147E4B /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A292248EDE100147E4B /* RoundImageView.swift */; };
 		04CA1A2C2248EF4D00147E4B /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA1A2B2248EF4D00147E4B /* RoundedShadowView.swift */; };
@@ -53,6 +54,7 @@
 		04407048224D01A900F8B76E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0440704A224D227700F8B76E /* UIVIewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtensions.swift; sourceTree = "<group>"; };
 		045929F62250E16000BAF989 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		0468FF4A225A189200533CAB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04CA1A272248E8B500147E4B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		04CA1A292248EDE100147E4B /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		04CA1A2B2248EF4D00147E4B /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		041A52AB2243BF8000ECE40C /* UberClone */ = {
 			isa = PBXGroup;
 			children = (
+				0468FF49225A187600533CAB /* Resources */,
 				04CCBF43224A7441002EC8D4 /* Services */,
 				042629BB224A40700091229A /* Extensions */,
 				04CA1A38224915BF00147E4B /* Protocols */,
@@ -110,7 +113,6 @@
 				04CA1A252248E88500147E4B /* View */,
 				04CA1A242248E87600147E4B /* Controller */,
 				041A52AC2243BF8000ECE40C /* AppDelegate.swift */,
-				041A52AE2243BF8000ECE40C /* HomeViewController.swift */,
 				041A52B02243BF8000ECE40C /* Main.storyboard */,
 				041A52B32243BF8200ECE40C /* Assets.xcassets */,
 				041A52B52243BF8200ECE40C /* LaunchScreen.storyboard */,
@@ -129,9 +131,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0468FF49225A187600533CAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0468FF4A225A189200533CAB /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		04CA1A242248E87600147E4B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				041A52AE2243BF8000ECE40C /* HomeViewController.swift */,
 				04CA1A3222490AA400147E4B /* LeftSidePanelViewController.swift */,
 				04CA1A342249123F00147E4B /* InnerViewController.swift */,
 				04CA1A362249129600147E4B /* ContainerViewController.swift */,
@@ -334,6 +345,7 @@
 				0429E2AA224BC33100E0B250 /* DriverAnnotation.swift in Sources */,
 				04CA1A372249129600147E4B /* ContainerViewController.swift in Sources */,
 				04122604224CF45D00343B18 /* PassangerAnnotation.swift in Sources */,
+				0468FF4B225A189200533CAB /* Constants.swift in Sources */,
 				04CA1A2E2248F04C00147E4B /* CircleView.swift in Sources */,
 				0440704B224D227700F8B76E /* UIVIewControllerExtensions.swift in Sources */,
 				04CA1A352249123F00147E4B /* InnerViewController.swift in Sources */,

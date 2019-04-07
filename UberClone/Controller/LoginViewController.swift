@@ -45,11 +45,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate, Alertable {
                         if let errorCode = AuthErrorCode(rawValue: error._code) {
                             switch errorCode {
                             case AuthErrorCode.emailAlreadyInUse:
-                                print("Email is already in use, Please try again")
+                                self.showAlert(ERROR_MESSAGE_EMAIL_ALREADY_IN_USE)
                             case AuthErrorCode.wrongPassword:
-                                self.showAlert("Whooops! That was the wrong password!")
+                                self.showAlert(ERROR_MESSAGE_WRONG_PASSWORD)
                             default:
-                                self.showAlert("An unexpeted error occured. Please try again.")
+                                self.showAlert(ERROR_MESSAGE_UNEXPECTED_ERROR)
                             }
                         }
                         Auth.auth().createUser(withEmail: email, password: password, completion: { (dataResult, error) in
@@ -57,18 +57,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate, Alertable {
                                 if let errorCode = AuthErrorCode(rawValue: error._code) {
                                     switch errorCode {
                                     case AuthErrorCode.invalidEmail:
-                                        self.showAlert("That is an invalid email. Please try again.")
+                                        self.showAlert(ERROR_MESSAGE_INVALID_EMAIL)
                                     default:
-                                        self.showAlert("An unexpeted error occured. Please try again.")
+                                        self.showAlert(ERROR_MESSAGE_UNEXPECTED_ERROR)
                                     }
                                 }
                             } else {
                                 if let dataResult = dataResult {
                                     if self.segmentedControl.selectedSegmentIndex == 0 {
-                                        let userData = ["provider": dataResult.user.providerID] as [String: Any]
+                                        let userData = [ACCOUNT_PROVIDER: dataResult.user.providerID] as [String: Any]
                                         DataService.instance.createFirebaseDBUSer(uid: dataResult.user.uid, userData: userData, isDriver: false)
                                     } else {
-                                        let userData = ["provider": dataResult.user.providerID, "userIsDriver": true, "isPickupModeEnabled": false, "driverIsOnTrip": false] as [String: Any]
+                                        let userData = [ACCOUNT_PROVIDER: dataResult.user.providerID, USER_IS_DRIVER: true, ACCOUNT_PICKUP_MODE_ENABLED: false, DRIVER_IS_ON_TRIP: false] as [String: Any]
                                         DataService.instance.createFirebaseDBUSer(uid: dataResult.user.uid, userData: userData, isDriver: true)
                                     }
                                 }
@@ -78,10 +78,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate, Alertable {
                     } else {
                         if let dataResult = dataResult {
                             if self.segmentedControl.selectedSegmentIndex == 0 {
-                                let userData = ["provider": dataResult.user.providerID] as [String: Any]
+                                let userData = [ACCOUNT_PROVIDER: dataResult.user.providerID] as [String: Any]
                                 DataService.instance.createFirebaseDBUSer(uid: dataResult.user.uid, userData: userData, isDriver: false)
                             } else {
-                                let userData = ["provider": dataResult.user.providerID, "userIsDriver": true, "isPickupModeEnabled": false, "driverIsOnTrip": false] as [String: Any]
+                                let userData = [ACCOUNT_PROVIDER: dataResult.user.providerID, USER_IS_DRIVER: true, ACCOUNT_PICKUP_MODE_ENABLED: false, DRIVER_IS_ON_TRIP: false] as [String: Any]
                                 DataService.instance.createFirebaseDBUSer(uid: dataResult.user.uid, userData: userData, isDriver: true)
                             }
                         }

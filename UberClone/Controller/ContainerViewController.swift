@@ -170,10 +170,10 @@ private extension UIStoryboard {
     }
     
     class func leftViewController() -> LeftSidePanelViewController? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "left_side_panel_view_controller") as? LeftSidePanelViewController
+        return mainStoryboard().instantiateViewController(withIdentifier: VIEW_CONTROLLER_LEFT_PANEL) as? LeftSidePanelViewController
     }
     
     class func homeViewController() -> HomeViewController? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "home_view_controller") as? HomeViewController
+        return mainStoryboard().instantiateViewController(withIdentifier: VIEW_CONTROLLER_HOME) as? HomeViewController
     }
 }

@@ -40,12 +40,12 @@ class LeftSidePanelViewController: UIViewController {
             userEmailLabel.text = nil
             userAccountTypeLabel.text = nil
             userImageView.isHidden = true
-            loginOutButton.setTitle("Sign Up / Login", for: UIControl.State.normal)
+            loginOutButton.setTitle(MESSAGE_SIGN_UP_SIGN_IN, for: UIControl.State.normal)
         } else {
             userEmailLabel.text = Auth.auth().currentUser?.email
             userAccountTypeLabel.text = ""
             userImageView.isHidden = false
-            loginOutButton.setTitle("Logout", for: UIControl.State.normal)
+            loginOutButton.setTitle(MESSAGE_SIGN_OUT, for: UIControl.State.normal)
         }
     }
     
@@ -54,7 +54,7 @@ class LeftSidePanelViewController: UIViewController {
             if let dataSnapshot = dataSnapshot.children.allObjects as? [DataSnapshot] {
                 for snap in dataSnapshot {
                     if snap.key == Auth.auth().currentUser?.uid {
-                        self.userAccountTypeLabel.text = "PASSANGER"
+                        self.userAccountTypeLabel.text = ACCOUNT_TYPE_PASSENGER
                     }
                 }
             }
@@ -63,10 +63,10 @@ class LeftSidePanelViewController: UIViewController {
             if let dataSnapshot = dataSnapshot.children.allObjects as? [DataSnapshot] {
                 for snap in dataSnapshot {
                     if snap.key == Auth.auth().currentUser?.uid {
-                        self.userAccountTypeLabel.text = "DRIVER"
+                        self.userAccountTypeLabel.text = ACCOUNT_TYPE_DRIVER
                         self.pickupModeSwitch.isHidden = false
                         
-                        let switchStatus = snap.childSnapshot(forPath: "isPickupModeEnabled").value as! Bool
+                        let switchStatus = snap.childSnapshot(forPath: ACCOUNT_PICKUP_MODE_ENABLED).value as! Bool
                         self.pickupModeSwitch.isOn = switchStatus
                         self.pickupModeLabel.isHidden = false
                         
@@ -78,7 +78,7 @@ class LeftSidePanelViewController: UIViewController {
     
     @IBAction func signUpLoginButtonWasPressed(_ sender: UIButton) {
         if Auth.auth().currentUser == nil {
-            if let loginViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "login_view_controller") as? LoginViewController {
+            if let loginViewController = UIStoryboard(name: MAIN_STORYBOARD, bundle: Bundle.main).instantiateViewController(withIdentifier: VIEW_CONTROLLER_LOGIN) as? LoginViewController {
                 present(loginViewController, animated: true, completion: nil)
             }
         } else {
@@ -89,7 +89,7 @@ class LeftSidePanelViewController: UIViewController {
                 userImageView.isHidden = true
                 pickupModeLabel.text = nil
                 pickupModeSwitch.isHidden = true
-                loginOutButton.setTitle("Sign Up / Login", for: UIControl.State.normal)
+                loginOutButton.setTitle(MESSAGE_SIGN_UP_SIGN_IN, for: UIControl.State.normal)
             } catch(let error) {
                 print(error.localizedDescription)
             }
@@ -98,13 +98,13 @@ class LeftSidePanelViewController: UIViewController {
     
     @IBAction func switchWasToggled(_ sender: UISwitch) {
         if sender.isOn {
-            pickupModeLabel.text = "PICKUP MODE ENABLED"
+            pickupModeLabel.text = MESSAGE_PICKUP_MODE_ENABLED
             appDelegate.menuContainerViewController.toggleLeftPanel()
-            DataService.instance.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": true])
+            DataService.instance.REF_DRIVERS.child(currentUserId!).updateChildValues([ACCOUNT_PICKUP_MODE_ENABLED: true])
         } else {
-            pickupModeLabel.text = "PICKUP MODE DISABLED"
+            pickupModeLabel.text = MESSAGE_PICKUP_MODE_DISABLED
             appDelegate.menuContainerViewController.toggleLeftPanel()
-            DataService.instance.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": false])
+            DataService.instance.REF_DRIVERS.child(currentUserId!).updateChildValues([ACCOUNT_PICKUP_MODE_ENABLED: false])
         }
     }
 }
